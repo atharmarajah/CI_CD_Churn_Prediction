@@ -34,7 +34,7 @@ jobs:
       run: |
         pytest test.py
 
-  deploy:
+deploy:
   runs-on: ubuntu-latest
   needs: build
   steps:
