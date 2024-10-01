@@ -4,7 +4,7 @@ from sklearn.ensemble import RandomForestClassifier
 import pandas as pd 
 
 def initiate_X_train():
-    data = pd.read_csv('data/customer_churn.csv')
+    data = pd.read_csv('customer_churn.csv')
     numerical_data = data.select_dtypes(include=['number'])
     X = numerical_data.drop('Churn',axis=1)
     y = numerical_data['Churn']
