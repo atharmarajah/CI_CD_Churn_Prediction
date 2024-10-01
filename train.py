@@ -5,7 +5,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 import pickle
 
 
-data = pd.read_csv('data/customer_churn.csv')
+data = pd.read_csv('customer_churn.csv')
 numerical_data = data.select_dtypes(include=['number'])
 
 
